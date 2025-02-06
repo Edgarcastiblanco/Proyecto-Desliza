@@ -1,0 +1,126 @@
+*{
+    animation: colores 15s ease-in-out infinite alternate;
+}
+
+.circulo{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    background-color: black;
+    border-width: 6px;
+    margin-right: 40px;
+
+}
+
+
+.contenedor figure{
+    justify-content: center;
+    display: flex;
+}
+
+.contenedor figcaption1{
+    list-style: none;
+    animation: circulo1 15s ease-in-out infinite alternate;
+
+}
+
+.contenedor figcaption2{
+    justify-content: center;
+    list-style: none;
+    animation: circulo2 15s ease-in-out infinite alternate;
+
+}
+
+.contenedor figcaption3{
+    list-style: none;
+    animation: circulo3 15s ease-in-out infinite alternate;
+
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+
+}
+
+.slidercarros {
+    width: 30vw;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+
+    
+}
+.slidercarros ul {
+    display: flex;
+    width: 300%;
+
+    animation: slide 15s ease-in-out infinite alternate;
+}
+.slidercarros li{
+    list-style: none;
+    width:90%;   
+}
+.slidercarros img{
+    width: 80%;
+    height: auto;
+}
+
+@keyframes slide {
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+ 
+    40%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+  
+    75%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+ 
+}
+@keyframes colores {
+    
+    0%{background: aliceblue;}
+    30%{background:aliceblue;}
+    
+    40%{background: aquamarine;}
+    65%{background: aquamarine;}
+
+    75%{background: aqua;}
+    100%{background:aqua;}
+}
+@keyframes circulo1 {
+
+    0%{border-color: rgb(55, 55, 249);}
+    30%{border-color: rgb(55, 55, 249);}
+    
+    40%{border-color: black;}
+    65%{border-color: black;}
+
+    75%{border-color: black;}
+    100%{border-color: black;}
+
+}
+@keyframes circulo2 {
+
+    0%{border-color: black;}
+    30%{border-color: black;}
+    
+    40%{border-color: yellow;}
+    65%{border-color: yellow;}
+
+    75%{border-color: black;}
+    100%{border-color:black;}
+}
+
+@keyframes circulo3 {
+
+    0%{border-color: black;}
+    30%{border-color: black;}
+    
+    40%{border-color: black;}
+    65%{border-color: black;}
+
+    75%{border-color: rgb(242, 9, 32);}
+    100%{border-color:rgb(242, 9, 32);}
+}
