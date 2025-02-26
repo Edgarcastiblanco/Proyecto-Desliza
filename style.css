@@ -1,85 +1,138 @@
+html, body {
+    width: 1280px;
+    height: 720px;
+}
 body{
-    margin-top: 40%;
  animation: colores 15s ease-in-out infinite alternate;
 }
 
-.circulo{
-    width: 20px;
-    height: 20px;
+.circulo1{
+    width: 43px;
+    height: 43px;
+    background-color: rgb(236,129,125);
     border-radius: 50%;
+    border-width: 3px;
+    margin-bottom: 20px;
     border-style: solid;
-    border-width: 6px;
-    margin-right: 30px;
-    margin-left: 50px;
 
 }
-    
+.circulo2{
+    width: 43px;
+    height: 43px;
+    background-color: rgb(165,238,135);
+    border-radius: 50%;
+    border-width: 3px;
+    margin-bottom: 20px;
+    border-style: solid;
+
+}
+.circulo3{
+    width: 43px;
+    height: 43px;
+    background-color: rgb(92,117,243);
+    border-radius: 50%;
+    border-width: 3px;
+    margin-bottom: 20px;
+    border-style: solid;
+
+}
+
 
 .elipse figure{
-    justify-content: center;
-    display: flex;
-} 
+display: grid;
+margin-top: 350px;
+margin-left: 80px;
+position:absolute;
 
+} 
+.img1{
+    position: relative;
+    bottom: 50px;
+}
+
+.img2{
+    position: relative;
+    bottom: 80px;
+}
+.img3{
+    position: relative;
+    bottom: 50px;
+}
 .elipse figcaption1{
-    list-style: none;
     animation: circulo1 15s ease-in-out infinite alternate;
 
 }
 
 .elipse figcaption2{
-    justify-content: center;
-    list-style: none;
     animation: circulo2 15s ease-in-out infinite alternate;
 
 }
 
 .elipse figcaption3{
-    list-style: none;
     animation: circulo3 15s ease-in-out infinite alternate;
 
 }
 .lema1{
     color: white;
-    font-family: 'Courier New';
-    font-style: inherit;
+    font-family: 'Varien';
+    letter-spacing: 9px;
+    font-size: 60px;
+    line-height: 10px;
+    position: relative;
+    top: 60px;
+ 
 }
+
 .lema2{
     color: white;
-    font-family:'Lucida Sans Unicode';
-    font-style: italic;
-}
+    font-family: 'Phonk';
+    transform: rotate(-15deg);
+    position: relative;
+    top: 110px;
+    font-size: 40px;
+    right: 65px;
+    }
+
+
 .lema3{
-    color: white;
-    font-family: cursive;
-    font-style: oblique;
+    width: 100px;
+    position: relative;
+    top: 10px;
 }
+
 h1{
     text-align: center;
-    margin: 0;
-    font-size: 60px;
-    display: flex;
+    }
 
-}
-
-h2{
+.Slogan1{
+    font-family: 'Varien';
     text-align: right;
-    margin: 0;
+    font-size: 20px;
+    right: 120px;
+    position: relative;
+}
+.Slogan2{
+    text-align: right;
     font-size: 30px;
+    right: 90px;
+    line-height: 10px;
+    position: relative;
+    top: 30px;
+}
+.Slogan3{
+    position: relative;
+    bottom: 100px;
+    left: 400px;
 
 }
-.elipse {
-    width:45%;
-    height: 70px;
-    margin: 0px auto;
-    overflow: hidden;
-    padding-right: 25%;
-    padding-left: 25%;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    border-radius: 50%;
-    position: absolute;
-    top: -400px;
 
+
+.elipse {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 5px; 
     animation: colores 15s ease-in-out infinite alternate;
 
 }
@@ -88,39 +141,60 @@ h2{
     display: flex;
     width: 300%;
     height: auto;
+    text-align: center;
 
     animation: slide 15s ease-in-out infinite alternate;
 }
 .elipse li{
+    z-index: 1;
     list-style: none;
     width:70%;   
 }
 .elipse img{
-    width: 60%;
-    margin-left: 100px;
+    width: 800px;
+    height: 314.49px;
     height: auto;
+    line-height: 10px;
 
+}
+.elipse ol img{
+    left: 210px;
+    width: 850px;
+    top: 130px;
+    position: relative;
+}
+
+.elipse ol1 img{
+    left: 900px;
+    width: 300px;
+    top:10px;
+    position: relative;
 }
 .elipse ol{
     display: flex;
     width: 300%;
-    height: auto;
-    margin-top: 80px;
     animation: slide 15s ease-in-out infinite alternate;
-}
-.elipse h1{
-    list-style: none;
-    margin-left: 18%;
-    width:60%;   
+
 }
 .elipse ol1{
     display: flex;
     width: 300%;
     color: white;
-    height: auto;
     animation: slide 15s ease-in-out infinite alternate;
 
 }
+.elipse1 {
+    width: 1146px;  
+    height: 904px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -1000px; 
+    margin-left: 100px;
+    border: 8px;
+    border-radius: 50%;
+    animation: colores 15s ease-in-out infinite alternate;
+
+  }
 
 @keyframes slide {
     0%{margin-left: 0%;}
@@ -135,47 +209,62 @@ h2{
 }
 @keyframes colores {
     
-    0%{background: radial-gradient(rgb(255,255,255),rgb(218,97,93))}
-    30%{background: radial-gradient(rgb(255, 255, 255),rgb(218,97,93));}
+    0%{background: radial-gradient(circle at center,rgb(255,255,255,0.1),rgb(218,97,93))}
+    30%{background: radial-gradient(circle at center,rgb(255, 255, 255,0.1),rgb(218,97,93));}
     
-    40%{background: radial-gradient(rgb(255,255,255),rgb(67,122,45));}
-    65%{background: radial-gradient(rgb(255,255,255),rgb(67,122,45));}
+    40%{background: radial-gradient(circle at center, rgb(255,255,255, 0.1),rgb(67,122,45));}
+    65%{background: radial-gradient(circle at center, rgb(255,255,255, 0.1),rgb(67,122,45));}
 
-    75%{background: radial-gradient(rgb(255,255,255),rgb(85,112,243));}
-    100%{background: radial-gradient(rgb(255,255,255),rgb(85,112,243));}
+    75%{background: radial-gradient(circle at center, rgb(255,255,255, 0.1),rgb(85,112,243));}
+    100%{background: radial-gradient(circle at center, rgb(255,255,255, 0.1),rgb(85,112,243));}
 }
 @keyframes circulo1 {
 
     0%{border-color: rgb(241, 15, 15);}
     30%{border-color: rgb(241, 15, 15);}
-    
-    40%{border-color: black;}
-    65%{border-color: black;}
 
-    75%{border-color: black;}
-    100%{border-color: black;}
+    
+    40%{border-color: transparent;}
+    65%{border-color: transparent;}
+
+    75%{border-color: transparent;}
+    100%{border-color: transparent;}
 
 }
 @keyframes circulo2 {
 
-    0%{border-color: black;}
-    30%{border-color: black;}
+    0%{border-color: transparent;}
+    30%{border-color: transparent;}
     
     40%{border-color: rgb(13,132,3);}
     65%{border-color: rgb(13,132,3);}
 
-    75%{border-color: black;}
-    100%{border-color:black;}
+
+    75%{border-color: transparent;}
+    100%{border-color: transparent;}
 }
 
 @keyframes circulo3 {
 
-    0%{border-color: black;}
-    30%{border-color: black;}
+    0%{border-color: transparent;}
+    30%{border-color: transparent;}
     
-    40%{border-color: black;}
-    65%{border-color: black;}
+    40%{border-color: transparent;}
+    65%{border-color: transparent;}
 
     75%{border-color: rgb(5,39,159);}
     100%{border-color:rgb(5,39,159);}
+}
+
+@font-face {
+    font-family: 'Varien';
+    src: url(fuentes/Varien.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Phonk';
+    src: url(fuentes/Phonk.otf);
+    font-weight: normal;
+    font-style: normal;
 }
